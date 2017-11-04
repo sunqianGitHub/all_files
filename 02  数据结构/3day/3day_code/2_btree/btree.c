@@ -13,7 +13,7 @@ btree_pnode create_btree(void)
 	    t = NULL;
       else{
 	    //创建根结点
-	    t = (btree_pnode)mallo(sizeof(btree_node));
+	    t = (btree_pnode)malloc(sizeof(btree_node));
 	    if(NULL == t){
 		  perror("malloc");
 		  exit(1);
@@ -47,7 +47,7 @@ void create_btree(btree_pnode *T)
 }
 #endif
 
-//先序遍历
+//先序递归遍历
 void preorder(btree_pnode t)
 {
       

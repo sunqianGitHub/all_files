@@ -57,10 +57,10 @@ void create_doublelist(double_plist l)
 {
      int n,i;
      double_plist new;
-    printf("请输入链表长度:"); 
-    scanf("%d",&n);
+     printf("请输入链表长度:"); 
+     scanf("%d",&n);
 
-    for(i = 0; i < n; i++){
+     for(i = 0; i < n; i++){
       new = (double_plist)malloc(sizeof(double_list));
       if(NULL == new){
 	    perror("malloc");
